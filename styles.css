@@ -1,0 +1,42 @@
+    nav {
+        background-color: #483c3c;
+        overflow: hidden;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        float: left;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #ddd;
+    }
+    
+    nav ul li img {
+        vertical-align: middle;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title-box {
+        background-color: #00aeef;
+        padding: 10px ;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+    }
