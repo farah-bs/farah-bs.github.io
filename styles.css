@@ -40,3 +40,60 @@
         font-weight: bold;
         color: white;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .liste.articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            padding: 10px;
+            
+            background-color: #f9f9f9;
+        }
+
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .type_et_date_article {
+            display: flex;
+            flex-direction: column;
+            background-color: #00aeef;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .a-type {
+            font-weight: bold;
+            color: #ffffff;
+            text-transform:uppercase;
+            margin-bottom: 1px; /* Reduced space between type and date */
+        }
+
+        .a-date {
+            color: #ffffff;
+        }
+
+        .lien_interne {
+            text-decoration: none;
+            color: #004876;
+        }
+
+        .lien_interne:hover {
+            text-decoration: underline;
+        }
+
+        .a-contenu {
+            margin: 10px 0;
+        }
