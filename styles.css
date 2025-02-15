@@ -97,3 +97,63 @@
         .a-contenu {
             margin: 10px 0;
         }
+
+/* Container to hold both sections side by side */
+.contact-plan-container {
+    display: flex;
+    justify-content: space-between; /* Keeps them side by side */
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 20px; /* Adjust the space between them */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Contact and Plan Sections Styling */
+#contact, .colonne_3 {
+    width: 48%; /* Makes them take equal width */
+}
+
+/* Ensure iframe map fits properly */
+.colonne_3 iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reset all spacing */
+.specialites-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 10px; /* Minimal spacing */
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+}
+
+.specialite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.specialite a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.specialite img {
+    width: 100%;
+    max-width: 200px; /* Adjust size */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures full image fills div */
+}
+
+/* Keep normal spacing for the rest of the page */
+.specialites h2 {
+    margin-bottom: 20px; /* Keeps title from getting too close */
+}
+
