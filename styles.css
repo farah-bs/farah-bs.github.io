@@ -1,87 +1,89 @@
-    nav {
-        background-color: #483c3c;
-        overflow: hidden;
-        text-align: center;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: inline-flex; /* Aligns list items in a row */
-        justify-content: center; /* Centers the list items horizontally */
-        width: 100%; /* Ensures it takes full width */
-    }
-    
-    nav ul li {
-        margin: 0 20px; /* Adds space between the list items */
-    }
-    nav ul li:last-child {
-        float: right; /* Keeps the last item on the right side */
-    }
-    
-    nav ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    nav ul li .dropdown {
-        position: relative;
-    }
-    
-    nav ul li .chevron {
-        margin-left: 5px;
-        font-size: 12px;
-    }
-    
-    nav ul li .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #00aeef;
-        min-width: 160px;
-        top: 100%;
-        left: 0;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    
-    nav ul li .dropdown:hover .dropdown-content {
-        display: block; /* Show the dropdown when hovering over the parent */
-    }
-    
-    nav ul li .dropdown-content li {
-        padding: 10px;
-        text-align: left;
-    }
-    
-    nav ul li .dropdown-content li a {
-        color: white;
-    }
-    
-    nav ul li .dropdown-content li:hover {
-        background-color: #0078b3; /* Change background color of dropdown items on hover */
-    }
-    
-    nav ul li .dropdown .chevron {
-        margin-left: 5px;
-    }
-    
-    nav ul li .dropdown:hover .chevron {
-        transform: rotate(180deg); /* Rotate chevron when dropdown is open */
-    }
+nav {
+    background-color: #483c3c;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Aligns list items in a row */
+    justify-content: center; /* Centers the list items horizontally */
+    width: 100%; /* Ensures it takes full width */
+}
+
+nav ul li {
+    margin: 0 20px; /* Adds space between the list items */
+}
+nav ul li:last-child {
+    float: right; /* Keeps the last item on the right side */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 
+nav ul li a:hover {
+    background-color: #ddd;
+}
 
-    nav ul li a:hover {
-        background-color: #ddd;
-    }
-    
-    nav ul li img {
-        vertical-align: middle;
-    }
+nav ul li img {
+    vertical-align: middle;
+}
 
     .section-title {
         font-size: 24px;
