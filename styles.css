@@ -87,25 +87,7 @@
         font-size: 24px;
     }
 
-.section-title-box2 {
-        background-color: #00aeef;
-        padding: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-/* Same margin as the content */
-        width: auto; /* Ensures the title width doesn't go beyond the margin */
-    }
 
-.section-title-box3 {
-        background-color: #00aeef;
-        padding: 10px;
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
- /* Same margin as the content */
-        width: auto; /* Ensures the title width doesn't go beyond the margin */
-    }
 
 /* Adjust the title to follow the same margins */
 .section-title-box {
@@ -114,7 +96,6 @@
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin: 0 150px; /* Same margin as the content */
     width: auto; /* Ensures the title width doesn't go beyond the margin */
 }
 
@@ -175,12 +156,17 @@
             margin: 10px 0;
         }
 
+        .lien_externe {
+            text-decoration: none;
+            color: #004876;
+        }
+
 /* Container to hold both sections side by side */
 .contact-plan-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Keeps them side by side */
     gap: 10px; /* Minimal spacing */
-
+    margin-top: 10px;
     align-items: center; /* Aligns them in the center */
     flex-wrap: wrap; /* Ensures responsiveness */
 }
@@ -248,8 +234,8 @@
     font-size: 16px; /* Adjusts the font size */
     font-weight: bold; /* Makes the font bold */
     padding: 10px; /* Adds padding for better spacing */
-    height: 38px; /* Sets the height to 44px */
-    width: 50px; /* Sets the width to 8% */
+    height: 38px ; /* Sets the height to 38px and makes it unchangeable */
+    width: 30px ; /* Sets the width to 50px and makes it unchangeable */
     margin-bottom: 4px;
     margin-right: 4px;
     text-align: center; /* Centers the text */
@@ -264,3 +250,22 @@
     font-size: 16px; /* Smaller font size for the month */
     display: block; /* Ensures it takes a full line */
 }
+
+/* Container for the two columns */
+.les-deux-colonnes {
+    display: flex;
+    gap: 10px; /* Minimal spacing */
+    margin-top: 10px;
+    align-items: center; /* Aligns them in the center */
+}
+
+.colonne-1 {
+    flex: 0 0 75%; /* Takes 80% of the width */
+    padding: 10px; /* Adds some padding */
+}
+
+.colonne-2 {
+    flex: 0 0 25%; /* Takes 20% of the width */
+    padding: 10px; /* Adds some padding */
+}
+
