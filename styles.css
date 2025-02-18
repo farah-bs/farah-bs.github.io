@@ -86,6 +86,27 @@
     .section-title {
         font-size: 24px;
     }
+
+.section-title-box2 {
+        background-color: #00aeef;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+/* Same margin as the content */
+        width: auto; /* Ensures the title width doesn't go beyond the margin */
+    }
+
+.section-title-box3 {
+        background-color: #00aeef;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+ /* Same margin as the content */
+        width: auto; /* Ensures the title width doesn't go beyond the margin */
+    }
+
 /* Adjust the title to follow the same margins */
 .section-title-box {
     background-color: #00aeef;
@@ -156,16 +177,18 @@
 
 /* Container to hold both sections side by side */
 .contact-plan-container {
-    display: flex;
-    justify-content: space-between; /* Keeps them side by side */
-    align-items: flex-start; /* Aligns them at the top */
-    gap: 20px; /* Adjust the space between them */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Keeps them side by side */
+    gap: 10px; /* Minimal spacing */
+
+    align-items: center; /* Aligns them in the center */
     flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 /* Contact and Plan Sections Styling */
-#contact, .colonne_3 {
-    width: 48%; /* Makes them take equal width */
+#contact {
+    max-width: 100%; /* Makes them take equal width */
+    height: auto; /* Adjusts height based on content */
 }
 
 /* Ensure iframe map fits properly */
@@ -220,17 +243,20 @@
 }
 
 .ag-date {
-    background-color: blue; /* Sets the background color to blue */
+    background-color: #00aeef; /* Sets the background color to blue */
     color: white; /* Sets the font color to white */
     font-size: 16px; /* Adjusts the font size */
     font-weight: bold; /* Makes the font bold */
     padding: 10px; /* Adds padding for better spacing */
-    height: 44px; /* Sets the height to 44px */
-    width: 8%; /* Sets the width to 8% */
+    height: 38px; /* Sets the height to 44px */
+    width: 50px; /* Sets the width to 8% */
+    margin-bottom: 4px;
+    margin-right: 4px;
+    text-align: center; /* Centers the text */
 }
 
 .ag-date .jour {
-    font-size: 24px; /* Larger font size for the day */
+    font-size: 22px; /* Larger font size for the day */
     display: block; /* Ensures it takes a full line */
 }
 
